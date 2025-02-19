@@ -1,0 +1,22 @@
+# Handle line endings automatically for files detected as text
+* text=auto
+
+# These files are text and should be normalized (Convert CRLF => LF)
+*.java text
+*.xml text
+*.yml text
+*.properties text
+*.md text
+*.txt text
+
+# These files are binary and should be left untouched
+*.jar binary
+*.war binary
+*.zip binary
+*.tar binary
+*.gz binary
+*.class binary
+
+# Windows-specific files
+*.cmd text eol=crlf
+mvnw.cmd text eol=crlf
